@@ -1,0 +1,101 @@
+* {
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+}
+/* Default Settings */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #eee;
+}
+
+/* Main Body */
+    /* Default */
+main {
+    /*max-width: 800px; */
+    width: 80%;
+    margin: 1vw auto;
+    margin-bottom: 6vw;
+    padding: 1% 5%;
+    background-color: #fff;
+    border-radius: 1vw;
+    box-shadow: 0 0 25px #111f;
+    min-height: 1000px;
+}
+    /* Default Elements */
+main * {
+    color: #222;
+    margin: auto;
+}
+
+[hidden] {
+    display: none;
+}
+[underline] {
+    text-decoration: underline;
+}
+/* Header */
+    /* Default */
+header {
+    text-align: center;
+    background-color: #1A1A1A;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    width: 100%;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/576/018/original/abstract-hexagon-geometric-surface-modern-black-and-grey-hexagonal-background-luxury-pattern-illustration-vector.jpg");
+    background-size:cover;
+    background-position-y: 50%;
+}
+header #pageTitle {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+    /* Default Elements */
+header #pageTitle * {
+    color: #eee;
+}
+header #pageTitle h1 {
+    font-size: 250%;
+}
+header #pageTitle h2 {
+    font-size: 200%;
+}
+[bordered] {
+    text-shadow:
+        -2px -2px 1px black,
+        2px -2px 1px black,
+        -2px  2px 1px black,
+        2px  2px 1px black;
+}
+/* Footer */
+    /* Default */
+footer {
+    text-align: center;
+    color: #eee;
+    background-color: #1A1A1A;
+    position: sticky;
+    width: auto;
+    margin: 0;
+    padding: 0.5vw;
+    height: auto;
+}
+    /* Default Elements */
+footer * {
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.75vw;
+    margin: auto;
+    width: auto;
+}
+    /* Hover Elements */
+footer a:hover {
+    color:#aaa;
+}
