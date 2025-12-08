@@ -110,6 +110,9 @@ main * {
     color: var(--color-main-text);
     margin: auto;
 }
+main p {
+    width:75%;
+}
 .mainHeader {
     padding: 1vw;
 }

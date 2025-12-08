@@ -12,12 +12,13 @@
     <body>
         <header> <!-- Website Header - Made with JS --> </header>
         <nav>    <!-- Navigation Bar - Made with JS -->    </nav>
-        <main> <!-- Main Body -->
+        <main center> <!-- Main Body -->
             <div center class="mainHeader">
-                <h1>Title</h1>
+                <h1>Meet the Authors</h1>
             </div>
-            <hr>
+            <hr> <br>
             <!-- Continue page content -->
+            <bios> <!-- Student Bios - Made with JS --></bios>
         </main>
 
         <footer> <!-- Website Footer - Made with JS --> </footer>
@@ -26,5 +27,9 @@
         <script src="../js/utils.js"></script>
         <script src="../js/components.js"></script>
         <script src="../main.js"></script>
+        <script>
+            // Generate author bios from config
+            UIComponents.createAuthorBios(SiteConfig.authors);
+        </script>
     </body>
 </html>

@@ -7,7 +7,8 @@ const PathUtils = {
      */
     getRoot: function(depth) {
         if (depth === 0) return '.';
-        return '../'.repeat(depth);
+        // Remove trailing slash for cleaner path concatenation
+        return '../'.repeat(depth).slice(0, -1);
     },
     
     /**

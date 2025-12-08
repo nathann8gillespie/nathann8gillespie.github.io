@@ -87,17 +87,46 @@ const UIComponents = {
         if (!footer) return;
         
         const footerHTML = `
-            © ${new Date().getFullYear()} ${footerConfig.organizationName}<br>
-            ${footerConfig.university} · ${footerConfig.department} <br>
-            Contact: 
-                <a href="mailto:${footerConfig.email}?subject=${footerConfig.emailSubject}">
-                    ${footerConfig.email}
-                </a>
+            <p>© ${new Date().getFullYear()} ${footerConfig.organizationName}</p>
+            <p>${footerConfig.tagline}</p>
         `;
         
-        const p = document.createElement("p");
-        p.innerHTML = footerHTML;
-        footer.appendChild(p);
+        footer.innerHTML = footerHTML;
+    },
+    
+    /**
+     * Create and render the About page author bios
+     * @param {Array} authors - Authors configuration from SiteConfig
+     */
+    createAuthorBios: function(authors) {
+        const biosContainer = document.querySelector("bios");
+        if (!biosContainer) return;
+        
+        biosContainer.innerHTML = ""; // Clear existing content
+        
+        authors.forEach((section, sectionIndex) => {
+            // Add section title
+            const sectionTitle = document.createElement("h2");
+            sectionTitle.textContent = section.sectionTitle;
+            biosContainer.appendChild(sectionTitle);
+            biosContainer.appendChild(document.createElement("br"));
+            
+            // Add bios for this section
+            const biosDiv = document.createElement("p");
+            section.bios.forEach((author, bioIndex) => {
+                biosDiv.innerHTML += author.bio;
+                // Add spacing between bios, but not after the last one
+                if (bioIndex < section.bios.length - 1) {
+                    biosDiv.innerHTML += "<br><br>";
+                }
+            });
+            biosContainer.appendChild(biosDiv);
+            
+            // Add spacing between sections, but not after the last one
+            if (sectionIndex < authors.length - 1) {
+                biosContainer.appendChild(document.createElement("br"));
+            }
+        });
     },
     
     /**
