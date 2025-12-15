@@ -182,7 +182,7 @@ const SiteConfig = {
             sectionTitle: "Problems in America",
             bios: [
                 {
-                    name: "NA",
+                    name: "Adrian O.",
                     bio: `
                         Adrian O. is a second year student who is actively studying computer 
                         science at the University of Nevada reno, they chose with the mindset 
@@ -190,7 +190,7 @@ const SiteConfig = {
                         every inhabitant.`
                 },
                 {
-                    name: "NA",
+                    name: "Tearlynn B.",
                     bio: `
                         Tearlynn B. is a first-year college student who is passionate about 
                         improving gun safety measures. She chose this topic after her little 
@@ -198,7 +198,7 @@ const SiteConfig = {
                         communities and leaders to take action in preventing future tragedies.`
                 },
                 {
-                    name: "NA",
+                    name: "Matthew Sutton",
                     bio: `
                         Matthew Sutton is a first year student who studies computer science at 
                         the University of Nevada, Reno. He chose his topic of right to repair 
@@ -219,13 +219,26 @@ const SiteConfig = {
                         marginalized groups in the workplace.`
                 },
                 {
-                    name: "Death Penalty",
-                    bio: `Author of Death Penalty has no bio available.`
-                }// ,
-                // {
-                //     name: "Mining",
-                //     bio: `--- GET MINING BIO ---`
-                // }
+                    name: "Yulisa R.",
+                    bio: `
+                        Yulisa R. is a sophomore student who is pursuing a career in nursing at the 
+                        University of Nevada, Reno. They chose the topic of the death penalty to 
+                        advocate for change in society to help others understand it on a deeper 
+                        level. In a recent case, America is going through a known individual where 
+                        a 20-year-old is in the process of being considered for being put on death 
+                        row. She’s hoping to help others find alternative ways for those who are put 
+                        on death row, especially at a young age. Fun fact: Yulisa loves to sleep a ton! 
+                        #shelivingthedream`
+                },
+                {
+                    name: "Joe Celsi",
+                    bio: `
+                        Joe Celsi is a sophomore at the University of Nevada Reno studying geology. He 
+                        chose this topic as its not only relevent ot his major but, he believes that 
+                        mining domestically in America saves the consumers money and that mining doesn't 
+                        have to cause environmental harm. He hopes others will recognize that and support 
+                        America in being self-reliable while also having concern for the environment. `
+                }
             ]
         }
     ],
