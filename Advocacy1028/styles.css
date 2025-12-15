@@ -1611,12 +1611,15 @@ nav ul.dropdown li:hover {
     line-height: 1.8;
     color: #333;
     font-size: 0.95em;
+    margin-bottom: 1em;
+    display: block;
 }
 
 .sourcesPage-citations .citation a {
     color: #9575cd;
     text-decoration: none;
-    word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .sourcesPage-citations .citation a:hover {
