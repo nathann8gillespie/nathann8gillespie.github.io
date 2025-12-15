@@ -1,0 +1,19 @@
+{
+    "rainbowString": {
+        "extensions": [
+            ".html",
+            ".css",
+            ".md"
+        ]
+    },
+    "indentRainbow.colors": [
+        "rgba(  7, 141, 112, 0.25)",
+        "rgba( 38, 206, 170, 0.25)",
+        "rgba(153, 232, 194, 0.25)",
+        "rgba(255, 255, 255, 0.25)",
+        "rgba(123, 173, 227, 0.25)",
+        "rgba( 80,  73, 203, 0.25)",
+        "rgba( 62,  26, 120, 0.25)"
+    ],
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)"
+}

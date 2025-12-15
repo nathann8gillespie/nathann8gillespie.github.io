@@ -105,22 +105,34 @@ const UIComponents = {
         biosContainer.innerHTML = ""; // Clear existing content
         
         authors.forEach((section, sectionIndex) => {
-            // Add section title
-            const sectionTitle = document.createElement("h2");
-            sectionTitle.textContent = section.sectionTitle;
-            biosContainer.appendChild(sectionTitle);
-            biosContainer.appendChild(document.createElement("br"));
+            // Create details/summary elements for collapsible section
+            const details = document.createElement("details");
+            details.open = true; // Open by default
+            
+            const summary = document.createElement("summary");
+            const title = document.createElement("span");
+            title.innerHTML = `<strong>${section.sectionTitle}</strong>`;
+            title.style.fontSize = "1.5em";
+            summary.appendChild(title);
+            details.appendChild(summary);
             
             // Add bios for this section
-            const biosDiv = document.createElement("p");
+            const biosDiv = document.createElement("div");
+            biosDiv.style.paddingLeft = "20px";
+            biosDiv.style.paddingTop = "10px";
+            
+            const biosP = document.createElement("p");
             section.bios.forEach((author, bioIndex) => {
-                biosDiv.innerHTML += author.bio;
+                biosP.innerHTML += author.bio;
                 // Add spacing between bios, but not after the last one
                 if (bioIndex < section.bios.length - 1) {
-                    biosDiv.innerHTML += "<br><br>";
+                    biosP.innerHTML += "<br><br>";
                 }
             });
-            biosContainer.appendChild(biosDiv);
+            biosDiv.appendChild(biosP);
+            details.appendChild(biosDiv);
+            
+            biosContainer.appendChild(details);
             
             // Add spacing between sections, but not after the last one
             if (sectionIndex < authors.length - 1) {

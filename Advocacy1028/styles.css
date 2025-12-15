@@ -291,3 +291,402 @@ nav ul.dropdown a {
 nav ul.dropdown li:hover {
     background-color: rgba(0, 31, 77, 0.05);
 }
+/* About Page - Bio Dropdowns */
+#bios details {
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #f9f9f9;
+}
+
+#bios summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    transition: background-color 0.2s;
+}
+
+#bios summary:hover {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+/* Custom dropdown arrow */
+#bios summary::after {
+    content: '▼';
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#bios details[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+/* Hide default marker */
+#bios summary::-webkit-details-marker {
+    display: none;
+}
+
+#advocacy_banner {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+}
+
+/* ========================================
+   DONATE PAGE STYLING
+   ======================================== */
+
+/* Intro Text */
+.donate-intro {
+    width: 75%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+/* Section Styling */
+.donate-section {
+    margin: 2em auto;
+    width: 85%;
+    max-width: 900px;
+}
+
+.donate-subtitle {
+    text-align: center;
+    color: #555;
+    font-size: 1em;
+    margin: 1em auto 2em;
+    width: 100%;
+}
+
+/* Payment Methods Grid */
+.donate-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin: 2em auto;
+    width: 100%;
+}
+
+.donate-method-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 2em 1.5em;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.donate-method-card:hover {
+    border-color: #041e42;
+    box-shadow: 0 4px 12px rgba(4, 30, 66, 0.15);
+    transform: translateY(-4px);
+}
+
+.method-icon {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.donate-method-card h3 {
+    color: #041e42;
+    margin: 0.5em 0;
+    font-size: 1.3em;
+}
+
+.method-handle {
+    color: #666;
+    font-family: monospace;
+    font-size: 1em;
+    margin: 1em 0;
+    padding: 0.5em;
+    background: #f0f0f0;
+    border-radius: 4px;
+    width: auto;
+}
+
+.method-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #041e42;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.method-link:hover {
+    background-color: #001f4d;
+    transform: scale(1.05);
+}
+
+/* ========================================
+   WHERE YOUR DONATIONS GO SECTION
+   ======================================== */
+
+.donateFunds {
+    margin: 2em auto;
+    width: 85%;
+    max-width: 850px;
+}
+
+.donateFunds-heading {
+    text-align: center;
+    color: #041e42;
+    font-size: 1.6em;
+    margin-bottom: 0.4em;
+    font-weight: 700;
+}
+
+.donateFunds-subheading {
+    text-align: center;
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.donateFunds-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.donateFunds-card {
+    display: grid;
+    grid-template-columns: 50px minmax(180px, 220px) 1fr;
+    grid-template-areas: "icon title description";
+    align-items: center;
+    gap: 1.2em;
+    background: #fafbfc;
+    border-left: 3px solid #041e42;
+    border-radius: 6px;
+    padding: 1em 1.4em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+}
+
+.donateFunds-card:hover {
+    box-shadow: 0 2px 8px rgba(4, 30, 66, 0.12);
+    background: #ffffff;
+}
+
+.donateFunds-icon {
+    grid-area: icon;
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donateFunds-title {
+    grid-area: title;
+    color: #041e42;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.donateFunds-description {
+    grid-area: description;
+    color: #555;
+    font-size: 0.92em;
+    margin: 0;
+    line-height: 1.4;
+    text-align: left;
+    width: 100%;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+    .donateFunds {
+        width: 90%;
+    }
+    
+    .donateFunds-card {
+        grid-template-columns: 45px 1fr;
+        grid-template-areas: 
+            "icon title"
+            "description description";
+        gap: 0.9em;
+        padding: 1em 1.2em;
+    }
+    
+    .donateFunds-icon {
+        font-size: 1.5em;
+        align-self: start;
+        padding-top: 0.1em;
+    }
+    
+    .donateFunds-title {
+        font-size: 0.98em;
+        white-space: normal;
+    }
+    
+    .donateFunds-description {
+        padding-left: 0;
+        font-size: 0.88em;
+        grid-column: 1 / -1;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+    .donateFunds {
+        width: 95%;
+    }
+    
+    .donateFunds-heading {
+        font-size: 1.4em;
+    }
+    
+    .donateFunds-subheading {
+        font-size: 0.9em;
+    }
+    
+    .donateFunds-card {
+        grid-template-columns: 40px 1fr;
+        grid-template-areas: 
+            "icon title"
+            "description description";
+        gap: 0.8em;
+        padding: 0.9em 1em;
+    }
+    
+    .donateFunds-icon {
+        font-size: 1.4em;
+    }
+    
+    .donateFunds-title {
+        font-size: 0.95em;
+    }
+    
+    .donateFunds-description {
+        font-size: 0.85em;
+    }
+}
+
+/* Call to Action Section */
+.donate-cta-container {
+    text-align: center;
+    padding: 2em 1em;
+    margin: 2em auto;
+    width: 85%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #041e42 0%, #001f4d 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(4, 30, 66, 0.2);
+}
+
+.cta-text {
+    color: white !important;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.donate-cta-button {
+    background: white;
+    color: #041e42 !important;
+    border: none;
+    padding: 1em 2.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donate-cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-thank-you {
+    color: white !important;
+    margin-top: 1em;
+    font-size: 0.95em;
+    opacity: 0.9;
+    width: 100%;
+}
+
+/* Responsive Design for Donate Page */
+@media (max-width: 768px) {
+    .donate-methods {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    
+    .donate-intro {
+        width: 90%;
+        font-size: 1em;
+    }
+    
+    .donate-section {
+        width: 95%;
+    }
+    
+    .donate-impact-list {
+        width: 100%;
+    }
+    
+    .donate-impact-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .impact-icon {
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+    
+    .donate-cta-container {
+        width: 95%;
+        padding: 1.5em 1em;
+    }
+    
+    .cta-text {
+        font-size: 1.1em;
+    }
+    
+    .donate-cta-button {
+        padding: 0.9em 2em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .method-icon {
+        font-size: 2.5em;
+    }
+    
+    .donate-method-card h3 {
+        font-size: 1.1em;
+    }
+    
+    .method-handle {
+        font-size: 0.9em;
+    }
+}
+
