@@ -1,6 +1,7 @@
 // Configuration module - Shared data across all pages
 const SiteConfig = {
     useFiles: true,
+    baseUrl: '/Advocacy1028', // Base URL for GitHub Pages deployment
     
     
     // Header/Title content

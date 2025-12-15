@@ -19,6 +19,13 @@ const PathUtils = {
      * @returns {string} - The complete relative link
      */
     buildLink: function(targetPath, currentDepth, includeFile = true) {
+        // Use absolute paths when baseUrl is defined (for GitHub Pages)
+        if (typeof SiteConfig !== 'undefined' && SiteConfig.baseUrl) {
+            const file = includeFile ? '/index.html' : '';
+            return `${SiteConfig.baseUrl}/${targetPath}${file}`;
+        }
+        
+        // Fallback to relative paths
         const root = this.getRoot(currentDepth);
         const file = includeFile ? '/index.html' : '';
         // Avoid double slashes when root is '.'
@@ -35,6 +42,12 @@ const PathUtils = {
      * @returns {string} - The relative path to the resource
      */
     getResourcePath: function(resourcePath, currentDepth) {
+        // Use absolute paths when baseUrl is defined (for GitHub Pages)
+        if (typeof SiteConfig !== 'undefined' && SiteConfig.baseUrl) {
+            return `${SiteConfig.baseUrl}/${resourcePath}`;
+        }
+        
+        // Fallback to relative paths
         const root = this.getRoot(currentDepth);
         // Avoid double slashes when root is '.'
         if (root === '.') {
