@@ -585,6 +585,407 @@ nav ul.dropdown li:hover {
     }
 }
 
+/* ========================================
+   MEDICAL PAGE SECTION
+   ======================================== */
+
+.medicalPage {
+    width: 100%;
+}
+
+/* Video Link */
+.medicalPage-videoLink {
+    width: 85%;
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.medicalPage-videoLink a {
+    display: inline-block;
+    padding: 1.2em 2.5em;
+    background-color: #041e42;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 4px 12px rgba(4, 30, 66, 0.2);
+    transition: all 0.3s ease;
+}
+
+.medicalPage-videoLink a:hover {
+    background-color: #001f4d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(4, 30, 66, 0.3);
+}
+
+/* Separator */
+.medicalPage-separator {
+    width: 70%;
+    max-width: 600px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
+    margin: 2.5em auto;
+}
+
+/* Watch More Section */
+.medicalPage-watchMore {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5em;
+    align-items: center;
+    width: 85%;
+    max-width: 900px;
+    margin: 2em auto 3em;
+    padding: 2em 2.5em;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.medicalPage-watchMore-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medicalPage-watchMore-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.medicalPage-watchMore-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.medicalPage-watchMore-content h2 {
+    color: #041e42;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.medicalPage-watchMore-content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.medicalPage-ctaButton {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background-color: #041e42;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(4, 30, 66, 0.2);
+}
+
+.medicalPage-ctaButton:hover {
+    background-color: #001f4d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 30, 66, 0.3);
+}
+
+/* Responsive: Tablet and Mobile */
+@media (max-width: 900px) {
+    .medicalPage-watchMore {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+        padding: 2em 1.8em;
+        text-align: center;
+    }
+    
+    .medicalPage-watchMore-image img {
+        max-width: 150px;
+    }
+    
+    .medicalPage-watchMore-content {
+        align-items: center;
+    }
+    
+    .medicalPage-watchMore-content p {
+        text-align: center;
+    }
+    
+    .medicalPage-ctaButton {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .medicalPage-videoContainer {
+        width: 95%;
+    }
+    
+    .medicalPage-watchMore {
+        width: 95%;
+        padding: 1.5em;
+    }
+    
+    .medicalPage-watchMore-content h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .medicalPage-watchMore-content h2 {
+        font-size: 1.4em;
+    }
+    
+    .medicalPage-watchMore-content p {
+        font-size: 0.95em;
+    }
+    
+    .medicalPage-ctaButton {
+        padding: 0.7em 1.5em;
+        font-size: 0.95em;
+    }
+}
+
+/* ========================================
+   RESEARCH SECTION
+   ======================================== */
+
+.researchSection {
+    width: 95%;
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 2em 0;
+}
+
+.researchSection-heading {
+    text-align: center;
+    color: #041e42;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.researchSection-subtitle {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.researchSection-divider {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #4a90e2;
+    margin: 1.5em 0 2em;
+}
+
+/* Title Card (Simple) */
+.researchSection-titleCard {
+    background: white;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.researchSection-titleCard-title {
+    color: #041e42;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Advocacy Section */
+.researchSection-advocacy {
+    background: #e8f2f7;
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.researchSection-advocacy-title {
+    text-align: center;
+    color: #041e42;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0 0 1.5em 0;
+}
+
+.researchSection-advocacy-description {
+    color: #444;
+    font-size: 0.9em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto 1.5em;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.researchSection-advocacy-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.researchSection-advocacy-image {
+    background: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.researchSection-advocacy-image img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+}
+
+/* Info Grid */
+.researchSection-infoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 2em;
+}
+
+.researchSection-infoCard {
+    background: white;
+    padding: 2em 1.5em;
+    border-right: 1px solid #e1e8ed;
+}
+
+.researchSection-infoCard:last-child {
+    border-right: none;
+}
+
+.researchSection-infoCard h4 {
+    color: #041e42;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+.researchSection-infoCard p {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.researchSection-infoCard a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.researchSection-infoCard a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 900px) {
+    .researchSection-advocacy-images {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+    
+    .researchSection-infoGrid {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    
+    .researchSection-infoCard {
+        border-right: none;
+        border-bottom: 1px solid #e1e8ed;
+    }
+    
+    .researchSection-infoCard:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+    .researchSection {
+        width: 95%;
+        margin: 2em auto;
+    }
+    
+    .researchSection-heading {
+        font-size: 1.8em;
+    }
+    
+    .researchSection-subtitle {
+        font-size: 1em;
+    }
+    
+    .researchSection-mainCard {
+        padding: 1.2em;
+    }
+    
+    .researchSection-mainCard-title {
+        font-size: 1.6em;
+    }
+    
+    .researchSection-advocacy {
+        padding: 1.5em;
+    }
+    
+    .researchSection-advocacy-title {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .researchSection-heading {
+        font-size: 1.5em;
+    }
+    
+    .researchSection-subtitle {
+        font-size: 0.9em;
+    }
+    
+    .researchSection-mainCard-title {
+        font-size: 1.4em;
+    }
+    
+    .researchSection-mainCard-author p {
+        font-size: 0.9em;
+    }
+    
+    .researchSection-advocacy-title {
+        font-size: 1.3em;
+    }
+    
+    .researchSection-infoCard {
+        padding: 1.5em 1em;
+    }
+    
+    .researchSection-infoCard h4 {
+        font-size: 1.1em;
+    }
+    
+    .researchSection-infoCard p {
+        font-size: 0.85em;
+    }
+}
+
 /* Call to Action Section */
 .donate-cta-container {
     text-align: center;
@@ -690,3 +1091,568 @@ nav ul.dropdown li:hover {
     }
 }
 
+/* ========================================
+   SOCIAL MEDIA PAGE
+   ======================================== */
+
+.socialMediaPage {
+    width: 100%;
+}
+
+/* Introduction Section */
+.socialMedia-intro {
+    background: linear-gradient(135deg, #f8f8f8 0%, #ececec 100%);
+    padding: 2.5em 3em;
+    margin: 2em auto 3em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.socialMedia-intro p {
+    color: #444;
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* Society's Affects Section */
+.socialMedia-societySection {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 4em;
+    margin: 4em auto;
+    padding: 0 3em;
+    align-items: start;
+    max-width: 1200px;
+}
+
+.socialMedia-societySection-left img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.socialMedia-societySection-right h2 {
+    color: #d4a5a5;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin: 0 0 1.2em 0;
+    letter-spacing: 0.02em;
+}
+
+.socialMedia-societySection-right p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.socialMedia-societySection-right p em {
+    font-style: italic;
+    color: #666;
+}
+
+/* Relationships Section */
+.socialMedia-relationshipsSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    margin: 4em auto;
+    padding: 2.5em 3em;
+    align-items: start;
+    max-width: 1200px;
+    background: #fef8f8;
+    border-radius: 8px;
+}
+
+.socialMedia-relationshipsSection-left h2 {
+    color: #d4a5a5;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: 0 0 1.2em 0;
+    letter-spacing: 0.02em;
+}
+
+.socialMedia-relationshipsSection-left p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.8;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.socialMedia-videoLinkBox {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 3em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 2px solid #dee2e6;
+}
+
+.socialMedia-videoLinkLabel {
+    font-size: 1.1em;
+    color: #041e42;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+}
+
+.socialMedia-videoButton {
+    display: inline-block;
+    background: linear-gradient(135deg, #9575cd 0%, #7e57c2 100%);
+    color: white;
+    padding: 1em 2.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(149, 117, 205, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.socialMedia-videoButton:hover {
+    background: linear-gradient(135deg, #7e57c2 0%, #6a4fa3 100%);
+    box-shadow: 0 6px 16px rgba(149, 117, 205, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Censorship Section */
+.socialMedia-censorshipSection {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 4em;
+    margin: 4em auto;
+    padding: 0 3em;
+    align-items: start;
+    max-width: 1200px;
+}
+
+.socialMedia-censorshipSection-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMedia-censorshipSection-right {
+    padding-top: 1em;
+}
+
+.socialMedia-censorshipSection-right h2 {
+    color: #9575cd;
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 0 0 1.2em 0;
+    letter-spacing: 0.02em;
+}
+
+.socialMedia-censorshipSection-right p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* PDF Container */
+.socialMedia-pdfContainer {
+    width: 101%;
+    height: 350px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.socialMedia-pdfContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.socialMedia-pdfLink {
+    font-size: 0.9em;
+    margin: 0.8em 0 0 0;
+    width: 100%;
+}
+
+.socialMedia-pdfLink a {
+    color: #9575cd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.socialMedia-pdfLink a:hover {
+    text-decoration: underline;
+    color: #7e57c2;
+}
+
+/* Bios Section */
+.socialMedia-bios {
+    background: linear-gradient(135deg, rgba(70, 100, 150, 0.9) 0%, rgba(50, 80, 130, 0.95) 100%);
+    padding: 4em 4em;
+    margin: 4em 0 0 0;
+    position: relative;
+}
+
+.socialMedia-bios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.socialMedia-bios h3 {
+    color: white !important;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 2em 0;
+    position: relative;
+    z-index: 1;
+}
+
+.socialMedia-bios p {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 0.95em;
+    line-height: 1.9;
+    margin: 0 0 2em 0;
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.socialMedia-bios p:last-child {
+    margin-bottom: 0;
+}
+
+.socialMedia-bios strong {
+    color: white;
+    font-weight: 700;
+    font-size: 1.05em;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1100px) {
+    .socialMedia-societySection {
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+        padding: 0 2em;
+    }
+    
+    .socialMedia-societySection-left {
+        text-align: center;
+    }
+    
+    .socialMedia-societySection-left img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .socialMedia-relationshipsSection {
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+        padding: 2em;
+    }
+    
+    .socialMedia-censorshipSection {
+        grid-template-columns: 1fr;
+        gap: 2.5em;
+        padding: 0 2em;
+    }
+    
+    .socialMedia-pdfContainer {
+        height: 550px;
+        max-width: 500px;
+        margin: 0 auto 1em;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+    .socialMedia-intro {
+        padding: 2em 1.8em;
+        margin: 1.5em auto 2.5em;
+    }
+    
+    .socialMedia-intro p {
+        font-size: 0.95em;
+    }
+    
+    .socialMedia-societySection {
+        padding: 0 1.5em;
+        gap: 2em;
+    }
+    
+    .socialMedia-societySection-right h2 {
+        font-size: 1.8em;
+    }
+    
+    .socialMedia-relationshipsSection {
+        padding: 2em 1.5em;
+        gap: 2em;
+    }
+    
+    .socialMedia-relationshipsSection-left h2 {
+        font-size: 1.4em;
+    }
+    
+    .socialMedia-censorshipSection {
+        padding: 0 1.5em;
+    }
+    
+    .socialMedia-censorshipSection-right h2 {
+        font-size: 1.5em;
+    }
+    
+    .socialMedia-bios {
+        padding: 3em 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .socialMedia-intro {
+        padding: 1.5em;
+        margin: 1em auto 2em;
+    }
+    
+    .socialMedia-intro p {
+        font-size: 0.9em;
+        line-height: 1.7;
+    }
+    
+    .socialMedia-societySection {
+        padding: 0 1em;
+        margin: 2.5em auto;
+    }
+    
+    .socialMedia-societySection-right h2 {
+        font-size: 1.5em;
+    }
+    
+    .socialMedia-societySection-right p {
+        font-size: 0.95em;
+    }
+    
+    .socialMedia-relationshipsSection {
+        padding: 1.5em 1em;
+        margin: 2.5em auto;
+    }
+    
+    .socialMedia-relationshipsSection-left h2 {
+        font-size: 1.3em;
+    }
+    
+    .socialMedia-relationshipsSection-left p {
+        font-size: 0.9em;
+    }
+    
+    .socialMedia-censorshipSection {
+        padding: 0 1em;
+        margin: 2.5em auto;
+    }
+    
+    .socialMedia-censorshipSection-right h2 {
+        font-size: 1.4em;
+    }
+    
+    .socialMedia-censorshipSection-right p {
+        font-size: 0.95em;
+    }
+    
+    .socialMedia-pdfContainer {
+        height: 400px;
+    }
+    
+    .socialMedia-bios {
+        padding: 2em 1.2em;
+    }
+    
+    .socialMedia-bios h3 {
+        font-size: 1.2em;
+    }
+    
+    .socialMedia-bios p {
+        font-size: 0.88em;
+        line-height: 1.8;
+    }
+}
+
+/* ========================================
+   Problems in America Page
+   ======================================== */
+
+.problemsInAmerica {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em 4em;
+}
+
+.problemsInAmerica-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+    margin-top: 3em;
+}
+
+.problemsInAmerica-card {
+    display: block;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    aspect-ratio: 3 / 4;
+}
+
+.problemsInAmerica-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.problemsInAmerica-card:focus-visible {
+    outline: 3px solid #9575cd;
+    outline-offset: 4px;
+}
+
+.problemsInAmerica-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .problemsInAmerica-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .problemsInAmerica {
+        padding: 0 1.5em 3em;
+    }
+    
+    .problemsInAmerica-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        margin-top: 2em;
+    }
+    
+    .problemsInAmerica-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .problemsInAmerica {
+        padding: 0 1em 2em;
+    }
+}
+
+/* ========================================
+   Sources Page
+   ======================================== */
+
+.sourcesPage {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2em 4em;
+}
+
+.sourcesPage-container {
+    margin-top: 2em;
+}
+
+.sourcesPage-section {
+    margin-bottom: 3em;
+}
+
+.sourcesPage-section h2 {
+    color: #041e42;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #d4a5a5;
+    font-weight: 600;
+}
+
+.sourcesPage-citations {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sourcesPage-citations .citation {
+    padding-left: 2em;
+    text-indent: -2em;
+    line-height: 1.8;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.sourcesPage-citations .citation a {
+    color: #9575cd;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.sourcesPage-citations .citation a:hover {
+    text-decoration: underline;
+}
+
+.sourcesPage-citations .citation em {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .sourcesPage {
+        padding: 0 1.5em 3em;
+    }
+    
+    .sourcesPage-section h2 {
+        font-size: 1.3em;
+    }
+    
+    .sourcesPage-citations .citation {
+        font-size: 0.9em;
+        padding-left: 1.5em;
+        text-indent: -1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .sourcesPage {
+        padding: 0 1em 2em;
+    }
+    
+    .sourcesPage-section h2 {
+        font-size: 1.2em;
+    }
+    
+    .sourcesPage-citations .citation {
+        font-size: 0.88em;
+    }
+}

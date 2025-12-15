@@ -142,6 +142,43 @@ const UIComponents = {
     },
     
     /**
+     * Create and render the Sources page citations
+     * @param {Array} sources - Sources configuration from SiteConfig
+     */
+    createSources: function(sources) {
+        const sourcesContainer = document.querySelector(".sourcesPage-container");
+        if (!sourcesContainer) return;
+        
+        sourcesContainer.innerHTML = ""; // Clear existing content
+        
+        sources.forEach((section) => {
+            // Create section element
+            const sectionElement = document.createElement("section");
+            sectionElement.classList.add("sourcesPage-section");
+            
+            // Add section title
+            const title = document.createElement("h2");
+            title.textContent = section.sectionTitle;
+            sectionElement.appendChild(title);
+            
+            // Add citations container
+            const citationsDiv = document.createElement("div");
+            citationsDiv.classList.add("sourcesPage-citations");
+            
+            // Add each citation
+            section.citations.forEach((citation) => {
+                const citationP = document.createElement("p");
+                citationP.classList.add("citation");
+                citationP.innerHTML = citation; // Use innerHTML to support links, italics, etc.
+                citationsDiv.appendChild(citationP);
+            });
+            
+            sectionElement.appendChild(citationsDiv);
+            sourcesContainer.appendChild(sectionElement);
+        });
+    },
+    
+    /**
      * Initialize all UI components at once
      * @param {number} currentDepth - Current page depth
      */

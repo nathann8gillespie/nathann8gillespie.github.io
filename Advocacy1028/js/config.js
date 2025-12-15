@@ -23,6 +23,7 @@ const SiteConfig = {
                 { name: "Problems in America", path: "sections/problems-in-america" }
             ]
         },
+        { name: "Sources", path: "sources" },
         { name: "Donate", path: "donate" }
     ],
 
@@ -224,6 +225,55 @@ const SiteConfig = {
                 //     name: "Mining",
                 //     bio: `--- GET MINING BIO ---`
                 // }
+            ]
+        }
+    ],
+    
+    // Sources - MLA Citations organized by section
+    sources: [
+        {
+            sectionTitle: "Social Media:",
+            citations: [
+                'HISTORY.com Editors. “Donald Trump.” <em>History.com</em>, A&E Television Networks, <a href="https://www.history.com/articles/donald-trump" target="_blank" rel="noopener">https://www.history.com/articles/donald-trump</a>.',
+                'LateNighter Staff. “Jimmy Kimmel Live! Cancels Thursday Night Episode Without Explanation.” <em>LateNighter</em>, <a href="https://latenighter.com/news/jimmy-kimmel-live-cancels-thursday-night-episode-without-explanation/" target="_blank" rel="noopener">https://latenighter.com/news/jimmy-kimmel-live-cancels-thursday-night-episode-without-explanation/</a>.',
+                'American Civil Liberties Union. “What Is Censorship?” <em>ACLU</em>, <a href="https://www.aclu.org/documents/what-censorship" target="_blank" rel="noopener">https://www.aclu.org/documents/what-censorship</a>.',
+                'Roberts, Margaret E. “Resilience to Online Censorship.” <em>Annual Review of Political Science</em>, vol. 23, 2020, <a href="https://doi.org/10.1146/annurev-polisci-050718-032837" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-polisci-050718-032837</a>.'
+            ]
+
+        },
+        {
+            sectionTitle: "Medical:",
+            citations: [
+                'Altmann, Brooke, et al. “Effects of Diagnostic Labels on Perceptions of Marginal Cases of Mental Ill-Health.” <em>PLOS Mental Health</em>, vol. 1, no. 3, Aug. 2024, <a href="https://doi.org/10.1371/journal.pmen.0000096" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pmen.0000096</a>.',
+                'Chen, M., J. J. Maleski, and D. R. Sawmiller. “Scientific Truth or False Hope? Understanding Alzheimer’s Disease from an Aging Perspective.” <em>Journal of Alzheimer’s Disease</em>, vol. 24, no. 1, 2011, pp. 3–10, <a href="https://doi.org/10.3233/JAD-2010-101638" target="_blank" rel="noopener">https://doi.org/10.3233/JAD-2010-101638</a>.',
+                'Deltombe, Nahomi, and Florian Bachmann. “How the BetterHelp Scandal Changed Our Perspective on Influencer Responsibility.” <em>Maastricht University Blog</em>, 8 Feb. 2021, <a href="https://www.maastrichtuniversity.nl/blog/2021/02/how-betterhelp-scandal-changed-our-perspective-influencer-responsibility" target="_blank" rel="noopener">https://www.maastrichtuniversity.nl/blog/2021/02/how-betterhelp-scandal-changed-our-perspective-influencer-responsibility</a>.',
+                'Ellis, Danielle. “Social Identification and Mental Health.” <em>News-Medical.net</em>, 30 June 2022, <a href="https://www.news-medical.net/health/Social-Identification-and-Mental-Health.aspx" target="_blank" rel="noopener">https://www.news-medical.net/health/Social-Identification-and-Mental-Health.aspx</a>.',
+                'Foulkes, Lucy. “The Problem with Mental Health Awareness.” <em>The British Journal of Psychiatry</em>, vol. 225, no. 2, Aug. 2024, pp. 337–38, <a href="https://doi.org/10.1192/bjp.2024.106" target="_blank" rel="noopener">https://doi.org/10.1192/bjp.2024.106</a>.',
+                'Gulliver, Amelia, Kathleen M. Griffiths, and Helen Christensen. “Perceived Barriers and Facilitators to Mental Health Help-Seeking in Young People: A Systematic Review.” <em>BMC Psychiatry</em>, vol. 10, no. 1, 2010, Article 113, <a href="https://link.springer.com/article/10.1186/1471-244x-10-113" target="_blank" rel="noopener">https://link.springer.com/article/10.1186/1471-244x-10-113</a>.',
+                'Hallsworth, Michael, et al. “Provision of Social Norm Feedback to High Prescribers of Antibiotics in General Practice: A Pragmatic National Randomised Controlled Trial.” <em>The Lancet</em>, vol. 387, no. 10029, 2016, pp. 1743–1752, <a href="https://doi.org/10.1016/S0140-6736(16)00215-4" target="_blank" rel="noopener">https://doi.org/10.1016/S0140-6736(16)00215-4</a>.',
+                'Harris, Adam M., et al. “Appropriate Antibiotic Use for Acute Respiratory Tract Infection in Adults.” <em>Annals of Internal Medicine</em>, vol. 164, no. 6, 2016, pp. 425–434, <a href="https://doi.org/10.7326/M15-1840" target="_blank" rel="noopener">https://doi.org/10.7326/M15-1840</a>.',
+                'Kohli, Neelesh, and Kavita Dua. “Stress among Youth: Causes and Its Management in Recent Times.” <em>International Journal of Science and Research</em>, <a href="https://doi.org/10.21275/SR22714172859" target="_blank" rel="noopener">https://doi.org/10.21275/SR22714172859</a>.',
+                'Lepreezy. “It’s 1940s and You’re Listening to Vintage Jazz on a Cozy Rainy Night.” <em>YouTube</em>, 31 Mar. 2025, <a href="https://www.youtube.com/watch?v=K110MtP_Mis" target="_blank" rel="noopener">https://www.youtube.com/watch?v=K110MtP_Mis</a>. Accessed 7 Dec. 2025.',
+                'Maccioni, R. B., and G. Perry. <em>Current Hypotheses and Research Milestones in Alzheimer’s Disease</em>. Springer, 2009, <a href="https://unr.primo.exlibrisgroup.com/permalink/01UNR_INST/bjoav5/alma991000060979706781" target="_blank" rel="noopener">https://unr.primo.exlibrisgroup.com/permalink/01UNR_INST/bjoav5/alma991000060979706781</a>.',
+                'McGorry, Patrick, et al. “The Youth Mental Health Crisis: Analysis and Solutions.” <em>Frontiers in Psychiatry</em>, vol. 15, Jan. 2025, <a href="https://doi.org/10.3389/fpsyt.2024.1517533" target="_blank" rel="noopener">https://doi.org/10.3389/fpsyt.2024.1517533</a>.',
+                'Meeker, Daniella, et al. “Effect of Behavioral Interventions on Inappropriate Antibiotic Prescribing Among Primary Care Practices.” <em>JAMA</em>, vol. 315, no. 6, 2016, pp. 562–570, <a href="https://doi.org/10.1001/jama.2016.0275" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2016.0275</a>.',
+                'Moeseneder, Laura, Patrick Figlioli, and Franz Caspar. “Confronting Patients: Therapists’ Model of a Responsiveness-Based Approach.” <em>Journal of Contemporary Psychotherapy</em>, vol. 48, no. 2, 2018, pp. 61–67, <a href="https://doi.org/10.1007/s10879-017-9371-x" target="_blank" rel="noopener">https://doi.org/10.1007/s10879-017-9371-x</a>.',
+                'Mullane, K., and M. Williams. “Alzheimer’s Disease beyond Amyloid.” <em>Biochemical Pharmacology</em>, vol. 177, 2020, Article 113945, <a href="https://doi.org/10.1016/j.bcp.2020.113945" target="_blank" rel="noopener">https://doi.org/10.1016/j.bcp.2020.113945</a>.',
+                'Music Library – Royalty Free Music. “This FUNKY Track Will Make Your Videos Go VIRAL.” <em>YouTube</em>, 13 Nov. 2025, <a href="https://www.youtube.com/watch?v=kXECerram3Y&list=PL2x9gUoF1KPIKlVyDR4O1hQu0tCW4CXri" target="_blank" rel="noopener">https://www.youtube.com/watch?v=kXECerram3Y</a>. Accessed 7 Dec. 2025.',
+                'NAMI. “Why Labels Can Be Harmful When You Have Mental Illness.” <em>NAMI</em>, 20 Oct. 2021, <a href="https://www.nami.org/bipolar-and-related-disorders/why-labels-can-be-harmful-when-you-have-mental-illness/" target="_blank" rel="noopener">https://www.nami.org/bipolar-and-related-disorders/why-labels-can-be-harmful-when-you-have-mental-illness/</a>.',
+                'Spurling, Geoffrey K. P., et al. “Immediate versus Delayed versus No Antibiotics for Respiratory Infections.” <em>Cochrane Database of Systematic Reviews</em>, 2023, Article CD004417, <a href="https://doi.org/10.1002/14651858.CD004417.pub6" target="_blank" rel="noopener">https://doi.org/10.1002/14651858.CD004417.pub6</a>.'
+            ]
+        },
+        {
+            sectionTitle: "Problems in America:",
+            citations: [
+                'Blue Checkmark. <em>iStockphoto</em>, <a href="https://www.istockphoto.com/illustrations/blue-checkmark" target="_blank" rel="noopener">https://www.istockphoto.com/illustrations/blue-checkmark</a>. Accessed 14 Dec. 2025.',
+                'Christ, Ginger. “1 in 5 Companies Say They’ve Slashed DEI Since Trump’s Election.” <em>ESG Dive</em>, 30 July 2025, <a href="https://www.esgdive.com/news/1-in-5-companies-slashed-dei-since-trump-election/756318/" target="_blank" rel="noopener">https://www.esgdive.com/news/1-in-5-companies-slashed-dei-since-trump-election/756318/</a>.',
+                '“DEI and Accessibility Explained.” <em>ACLU of Arkansas</em>, <a href="https://www.acluarkansas.org/news/dei-and-accessibility-explained/" target="_blank" rel="noopener">https://www.acluarkansas.org/news/dei-and-accessibility-explained/</a>. Accessed 14 Dec. 2025.',
+                'Hand Cursor. <em>Flaticon</em>, <a href="https://www.flaticon.com/free-icon/hand-cursor_6001707" target="_blank" rel="noopener">https://www.flaticon.com/free-icon/hand-cursor_6001707</a>. Accessed 14 Dec. 2025.',
+                '“Increasing Student Success in STEM.” <em>Change: The Magazine of Higher Learning</em>, 2017, <a href="https://doi.org/10.1080/00091383.2017.1357097" target="_blank" rel="noopener">https://doi.org/10.1080/00091383.2017.1357097</a>. Accessed 14 Dec. 2025.',
+                'Open Book with a Blue Cover. <em>iStockphoto</em>, <a href="https://www.istockphoto.com/illustrations/open-book-with-a-blue-cover" target="_blank" rel="noopener">https://www.istockphoto.com/illustrations/open-book-with-a-blue-cover</a>. Accessed 14 Dec. 2025.',
+                '“Supreme Court: Affirmative Action, Diversity, Equity, Inclusion, and Belonging.” <em>Forbes</em>, <a href="https://imageio.forbes.com/specials-images/imageserve/64a1f3caf05060c01cb4ddd4/" target="_blank" rel="noopener">https://imageio.forbes.com/specials-images/imageserve/64a1f3caf05060c01cb4ddd4/</a>. Accessed 14 Dec. 2025.'
             ]
         }
     ]

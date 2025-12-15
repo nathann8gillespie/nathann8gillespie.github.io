@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- WEBSITE TITLE -->
+        <title>Advocacy 1028</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header> <!-- Website Header - Made with JS --> </header>
+        <nav>    <!-- Navigation Bar - Made with JS -->    </nav>
+        <main> <!-- Main Body -->
+            <div class="sourcesPage">
+                <div center class="mainHeader">
+                    <h1>Sources</h1>
+                </div>
+                <hr>
+                
+                <div class="sourcesPage-container">
+                    <!-- Sources generated from config.js -->
+                </div>
+            </div>
+        </main>
+
+        <footer> <!-- Website Footer - Made with JS --> </footer>
+        <!-- Modular JavaScript -->
+        <script src="../js/config.js"></script>
+        <script src="../js/utils.js"></script>
+        <script src="../js/components.js"></script>
+        <script src="../main.js"></script>
+        <script>
+            // Generate sources page content
+            UIComponents.createSources(SiteConfig.sources);
+        </script>
+    </body>
+</html>
